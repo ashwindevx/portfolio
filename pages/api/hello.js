@@ -1,5 +1,27 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+async function fetchGraphQL(query) {
+  return fetch("https://api.hashnode.com/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
+    },
+    body: JSON.stringify({ query }),
+  }).then((response) => response.json());
+}
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
+export async function fetchedData() {
+  const entry = await fetchGraphQL(`
+    query {
+      user(username: "ashhwin") {
+        publication {
+          posts {
+            title
+            slug
+            dateAdded
+          }
+        }
+      }
+    }
+  `);
+  return entry;
 }
