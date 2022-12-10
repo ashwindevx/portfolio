@@ -1,12 +1,10 @@
-import Paper from "../public/paper.jpg";
-import Image from "next/image";
-
 export default function Layout({ children }) {
   return (
     <>
-      <div className="h-full">
-        <div className="relative w-fit"></div>
-        <main>{children}</main>
+      <div className="bg-[#ffb9573c] w-full h-full bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')]">
+        <div className="h-full mix-blend-screen">
+          <main>{children}</main>
+        </div>
       </div>
     </>
   );
