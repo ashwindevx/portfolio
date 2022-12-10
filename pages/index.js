@@ -39,7 +39,7 @@ export default function Home({ blogs }) {
                 <h4 className="font-subHeading mb-6 font-bold text-4xl tracking-tighter text-black">
                   Who am I?
                 </h4>
-                <Image src={Profile} alt="" className="mb-6" />
+                <Image src={Profile} alt="" priority className="mb-6" />
                 <p className="font-body font-normal text-lg text-black leading-7">
                   My name is Ashwin Chauhan, I am 19 years old, originally from
                   Meerut now living in Mohali. I was pursuing BTECH in CS but
@@ -82,6 +82,7 @@ export default function Home({ blogs }) {
                   <div className="flex justify-between items-start mb-4">
                     <Image
                       src={Profile}
+                      priority
                       alt=""
                       className="w-[312px] h-[200px] mr-4"
                     />
@@ -115,6 +116,7 @@ export default function Home({ blogs }) {
                   </div>
                   <div className="flex justify-between items-start">
                     <Image
+                      priority
                       src={Profile}
                       alt=""
                       className="w-[312px] h-[200px] mr-4"
@@ -193,7 +195,12 @@ export default function Home({ blogs }) {
                   </a>
                 </div>
                 <div className="bg-black w-full h-full mt-6"></div>
-                <Image src={Laying} alt="" className="absolute right-0" />
+                <Image
+                  src={Laying}
+                  priority
+                  alt=""
+                  className="absolute right-0"
+                />
               </div>
             </div>
           </div>
