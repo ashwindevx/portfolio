@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Head from "next/head";
 import Layout from "../components/layout";
 import Profile from "../public/profile.jpg";
 import Laying from "../public/laying.png";
@@ -10,9 +11,41 @@ export const config = {
 
 export default function Home({ blogs }) {
   const posts = blogs.data.user.publication.posts.slice(0, 3);
+  const today = new Date();
+  const dateString = today.toLocaleDateString("en-US", {
+    year: "numeric",
+    day: "2-digit",
+    month: "long",
+  });
+
+  const weekday = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  const day = weekday[today.getDay()];
 
   return (
     <Layout>
+      <Head>
+        <title>Ashwin - Frontend Developer</title>
+        <meta name="description" content="Ashwin Chauhan's portfolio website" />
+        <link rel="icon" href="/Frame 14.png" />
+        <meta property="og:url" content="https://www.ashwin.codes/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Ashwin - Frontend Developer" />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          property="og:description"
+          content="Ashwin Chauhan's portfolio website"
+        />
+        <meta property="og:image" content="https://freeimage.host/i/HoFRT8B" />
+      </Head>
       <div className="h-full py-8">
         <div className="max-w-7xl mx-auto">
           {/* whole frame */}
@@ -20,9 +53,18 @@ export default function Home({ blogs }) {
             {/* heading frame */}
             <div className="border-b-2 border-black p-8">
               <div className="mx-auto w-fit text-center">
-                <h4 className="font-[Chomsky] font-normal text-4xl text-black capatalize mb-6">
-                  The Ashwin News
-                </h4>
+                <div className="flex justify-between items-end">
+                  <p className="font-body basis-1/3 text-start text-base">
+                    {day}
+                  </p>
+                  <h4 className="font-[Chomsky] font-normal text-4xl basis-1/3 text-black capatalize">
+                    Ashwin&apos;s Portfolio
+                  </h4>
+                  <p className="font-body justify-self-start text-base text-end basis-1/3">
+                    {dateString}
+                  </p>
+                </div>
+                <div className="w-full border-4 border-black my-2"></div>
                 <h1 className="font-heading font-normal uppercase text-9xl">
                   Frontend Developer
                 </h1>
@@ -41,7 +83,7 @@ export default function Home({ blogs }) {
               {/* who am i section */}
               <div className=" w-full p-4 flex-[50%] border-r-2 border-black flex flex-col justify-between">
                 <h4 className="font-subHeading mb-6 font-bold text-4xl tracking-tighter text-black">
-                  Who am I?
+                  The Story...
                 </h4>
                 <Image src={Profile} alt="" className="mb-6" />
                 <p className="font-body font-normal text-lg text-black leading-7 word-spacing mb-3">
@@ -66,9 +108,9 @@ export default function Home({ blogs }) {
               {/* project section */}
               <div className="p-4 w-full flex flex-col justify-between">
                 <h4 className="font-subHeading mb-6 font-bold text-4xl tracking-tighter text-black">
-                  Projects I have worked on
+                  Ashwin&apos;s Projects
                 </h4>
-                <div>
+                {/* <div>
                   <div className="flex justify-between items-start mb-4">
                     <Image
                       src={Profile}
@@ -137,15 +179,38 @@ export default function Home({ blogs }) {
                       </p>
                     </div>
                   </div>
+                </div> */}
+                <div className="bg-black w-full h-full text-white flex items-center justify-center">
+                  <div className="text-center">
+                    <p className="font-body uppercase font-semibold text-4xl word-spacing">
+                      This
+                      <br />
+                      section
+                      <br />
+                      of the
+                      <br />
+                      newspaper
+                      <br />
+                      is being
+                      <br />
+                      worked
+                      <br />
+                      on by the
+                      <br />
+                      publisher.
+                    </p>{" "}
+                    <p className="uppercase word-spacing text-black bg-white font-body mt-4 text-2xl">
+                      please stay tuned.
+                    </p>
+                  </div>
                 </div>
-                <div className="bg-black w-full h-full mt-6"></div>
               </div>
             </div>
             <div className="flex justify-between">
               {/* writing section */}
               <div className="p-4 border-r-2 border-black w-full flex-[40%] flex flex-col">
                 <h4 className="font-subHeading mb-6 font-bold text-4xl tracking-tighter text-black">
-                  Writings
+                  Notes
                 </h4>
                 {posts.map((post) => {
                   return (
@@ -172,8 +237,8 @@ export default function Home({ blogs }) {
               {/* contact section */}
               <div className="flex flex-col relative items-start p-4 justify-between w-full flex-[60%]">
                 <h4 className="font-subHeading mb-6 font-bold text-4xl tracking-tighter text-black w-[75%]">
-                  Please reach out to me if you need assistance with centering
-                  your div
+                  Please reach out to Ashwin if you need assistance with
+                  centering your div
                 </h4>
                 <div className="font-body font-normal text-lg underline text-black leading-7">
                   <a
