@@ -7,3 +7,9 @@
   src: url("../public/Chomsky.otf") format("truetype");
   font-weight: normal;
 }
+
+@layer utilities {
+  .word-spacing {
+    word-spacing: 8px;
+  }
+}

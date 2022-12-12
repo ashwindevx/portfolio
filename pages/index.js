@@ -44,19 +44,22 @@ export default function Home({ blogs }) {
                   Who am I?
                 </h4>
                 <Image src={Profile} alt="" className="mb-6" />
-                <p className="font-body font-normal text-lg text-black leading-7">
-                  My name is Ashwin Chauhan, I am 19 years old, originally from
-                  Meerut now living in Mohali. I was pursuing BTECH in CS but
-                  dropped out in 2020 because I wasn’t ending any value in it. I
-                  did my High schooling from MPS school, Meerut in Science. As
-                  my interest was in Coding hence I immediately after my high
-                  schooling I joined Devsnest Bootcamp for 7 months course and I
-                  started learning from free sources. Then started teaching
-                  myself to Code and Design. In early 2021 I joined Cato now
-                  Navgurukul Labs as a volunteer Front End Web Developer and Web
-                  Designer. After working a couple of months as a volunteer I
-                  joined as a full time developer there. So, it’s been a year
-                  and a half since working there.
+                <p className="font-body font-normal text-lg text-black leading-7 word-spacing mb-3">
+                  Hi there! I&apos;m Ashwin and I&apos;m passionate about the
+                  power of the web and how it all comes together. I love
+                  exploring the world of front-end development and using my
+                  skills to create engaging, dynamic experiences for users.
+                </p>
+                <p className="font-body font-normal text-lg text-black leading-7 word-spacing mb-3">
+                  &nbsp;&nbsp;I come from the city of Meerut. I skipped formal
+                  college education to learn the How, What, and Why of Frontend
+                  Development. Since then I have taught myself everything from
+                  how the web works to building web apps.
+                </p>
+                <p className="font-body font-normal text-lg text-black leading-7 word-spacing">
+                  &nbsp;&nbsp;When I&apos;m not coding, you can find me reading
+                  and writing about various topics such as philosophy,
+                  psychology, self-improvement, and technology.
                 </p>
                 <div className="bg-black w-full h-full mt-6"></div>
               </div>
