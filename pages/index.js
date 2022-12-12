@@ -43,19 +43,13 @@ export default function Home({ blogs }) {
           property="og:description"
           content="Ashwin Chauhan's portfolio website"
         />
-        <meta
-          property="og:image"
-          content="https://ia.media-imdb.com/images/rock.jpg"
-        />
+        <meta property="og:image" content="https://ibb.co/Ltt4KQY" />
         <meta name="twitter:title" content="Ashwin - Frontend Developer" />
         <meta
           name="twitter:description"
           content="Ashwin Chauhan's portfolio website"
         />
-        <meta
-          name="twitter:image"
-          content=" http://euro-travel-example.com/thumbnail.jpg"
-        />
+        <meta name="twitter:image" content="https://ibb.co/Ltt4KQY" />
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
       <div className="h-full py-8">
