@@ -44,7 +44,10 @@ export default function Home({ blogs }) {
           property="og:description"
           content="Ashwin Chauhan's portfolio website"
         />
-        <meta property="og:image" content="https://freeimage.host/i/HoFRT8B" />
+        <meta
+          property="og:image"
+          content="https://drive.google.com/file/d/1KSckGaxcNMU7ScIZF-v92azAjSEywplC/view?usp=share_link"
+        />
       </Head>
       <div className="h-full py-8">
         <div className="max-w-7xl mx-auto">
