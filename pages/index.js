@@ -211,5 +211,6 @@ export async function getStaticProps() {
   const blogs = (await fetchedData()) ?? [];
   return {
     props: { blogs },
+    revalidate: 10, // seconds
   };
 }
