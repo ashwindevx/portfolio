@@ -39,15 +39,12 @@ export default function Home({ blogs }) {
         <meta property="og:url" content="https://www.ashwin.codes/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Ashwin - Frontend Developer" />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta
           property="og:description"
           content="Ashwin Chauhan's portfolio website"
         />
-        <meta
-          property="og:image"
-          content="https://drive.google.com/file/d/1KSckGaxcNMU7ScIZF-v92azAjSEywplC/view?usp=share_link"
-        />
+        <meta property="og:image" content="https://ibb.co/KsSKh7k" />
       </Head>
       <div className="h-full py-8">
         <div className="max-w-7xl mx-auto">
