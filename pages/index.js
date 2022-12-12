@@ -45,20 +45,20 @@ export default function Home({ blogs }) {
                 </h4>
                 <Image src={Profile} alt="" className="mb-6" />
                 <p className="font-body font-normal text-lg text-black leading-7 word-spacing mb-3">
-                  Hi there! I&apos;m Ashwin and I&apos;m passionate about the
-                  power of the web and how it all comes together. I love
-                  exploring the world of front-end development and using my
-                  skills to create engaging, dynamic experiences for users.
+                  Ashwin is passionate about the power of the web and how it all
+                  comes together. He loves exploring the world of front-end
+                  development and using his skills to create engaging, dynamic
+                  experiences for users.
                 </p>
                 <p className="font-body font-normal text-lg text-black leading-7 word-spacing mb-3">
-                  &nbsp;&nbsp;I come from the city of Meerut. I skipped formal
-                  college education to learn the How, What, and Why of Frontend
-                  Development. Since then I have taught myself everything from
-                  how the web works to building web apps.
+                  &nbsp;&nbsp;Ashwin comes from the city of Meerut. He skipped
+                  formal college education to learn the How, What, and Why of
+                  Frontend Development. Since then, he has taught himself
+                  everything from how the web works to building web apps.
                 </p>
                 <p className="font-body font-normal text-lg text-black leading-7 word-spacing">
-                  &nbsp;&nbsp;When I&apos;m not coding, you can find me reading
-                  and writing about various topics such as philosophy,
+                  &nbsp;&nbsp;When Ashwin is not coding, you can find him
+                  reading and writing about various topics such as philosophy,
                   psychology, self-improvement, and technology.
                 </p>
                 <div className="bg-black w-full h-full mt-6"></div>
