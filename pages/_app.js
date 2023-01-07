@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
-      <Analytics />
+      <Analytics mode={"production"} />
     </>
   );
 }
