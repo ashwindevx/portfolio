@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Simplify-It",
+    "description": "Simplify-It is a tool that helps users understand complex topics in a simple and easy-to-understand way. The tech stack for the project includes TypeScript, NextJS, Firebase, TailwindCSS, and the OpenAI API. The purpose of the app was to build a tool that simplifies the process of searching for information using the Chat OpenAI API and also to learn and implement TypeScript.",
+    "liveLink": "https://simplify-it.vercel.app/",
+    "githubLink": "https://github.com/ashwindevx/simplify-it"
+  },
+  {
+    "name": "E-Commerce App",
+    "description": "Building an e-commerce app with React allowed Ashwin to deepen his understanding of the framework and its core concepts. The app uses React JS, Vite, Firebase, Redux Toolkit, React Router, TailwindCSS, and Material UI in its tech stack, and includes features such as product search, a shopping cart, Google authentication, and an interactive checkout page. The project also provided an opportunity for Ashwin to learn about state management with Redux Toolkit, authentication with Firebase, and routing with React Router.",
+    "liveLink": "https://e-commerce-app-one-theta.vercel.app/",
+    "githubLink": "https://github.com/ashwindevx/eCommerce-app"
+  },
+  {
+    "name": "Spotify Clone",
+    "description": "The inspiration for building this app came from Ashwin's love of Spotify's music recommendations and UI/UX. Using Vite, vanilla JS, and TailwindCSS, Ashwin built a clone of the platform with features such as authentication using Spotify's API, featured and top playlists, play/pause/next/previous/volume controls, and a song duration bar. The project provided an opportunity for Ashwin to learn about core JavaScript concepts and work with HTML and vanilla JavaScript, rather than relying on libraries or frameworks.",
+    "liveLink": "https://spotify-clone-vsgp.vercel.app/",
+    "githubLink": "https://github.com/ashwindevx/spotify-clone"
+  }
+]

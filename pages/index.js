@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import Profile from "../public/profile.jpg";
 import Laying from "../public/laying.png";
 import { fetchedData } from "./api/hello.js";
+import Projects from "/projects.json";
 
 export const config = {
   unstable_runtimeJS: false,
@@ -111,104 +112,44 @@ export default function Home({ blogs }) {
                 <div className="bg-black w-full h-full mt-6 lg:hidden"></div>
               </div>
               {/* project section */}
-              <div className="p-4 xs:px-2 w-full flex flex-col justify-between">
+              <div className="p-4 xs:px-2 w-full flex flex-col">
                 <h4 className="font-subHeading mb-6 font-bold md:text-3xl text-4xl tracking-tighter text-black">
                   Ashwin&apos;s Projects
                 </h4>
-                {/* <div>
-                  <div className="flex justify-between items-start mb-4">
-                    <Image
-                      src={Profile}
-                      alt=""
-                      className="w-[312px] h-[200px] mr-4"
-                    />
-                    <div>
-                      <h6 className="font-subHeading tracking-[-2%] text-2xl font-semibold uppercase mb-1">
-                        Career Taxi Website
-                      </h6>
-                      <p className="font-body font-normal text-lg text-black leading-7">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Inventore non incidunt libero odio labore assumenda, sit
-                        nemo laboriosam animi cumque?
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex justify-between items-start mb-4">
-                    <Image
-                      src={Profile}
-                      alt=""
-                      className="w-[312px] h-[200px] mr-4"
-                    />
-                    <div>
-                      <h6 className="font-subHeading tracking-[-2%] text-2xl font-semibold uppercase mb-1">
-                        Career Taxi Website
-                      </h6>
-                      <p className="font-body font-normal text-lg text-black leading-7">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Inventore non incidunt libero odio labore assumenda, sit
-                        nemo laboriosam animi cumque?
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex justify-between items-start mb-4">
-                    <Image
-                      src={Profile}
-                      alt=""
-                      className="w-[312px] h-[200px] mr-4"
-                    />
-                    <div>
-                      <h6 className="font-subHeading tracking-[-2%] text-2xl font-semibold uppercase mb-1">
-                        Career Taxi Website
-                      </h6>
-                      <p className="font-body font-normal text-lg text-black leading-7">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Inventore non incidunt libero odio labore assumenda, sit
-                        nemo laboriosam animi cumque?
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex justify-between items-start">
-                    <Image
-                      src={Profile}
-                      alt=""
-                      className="w-[312px] h-[200px] mr-4"
-                    />
-                    <div>
-                      <h6 className="font-subHeading tracking-[-2%] text-2xl font-semibold uppercase mb-1">
-                        Career Taxi Website
-                      </h6>
-                      <p className="font-body font-normal text-lg text-black leading-7">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Inventore non incidunt libero odio labore assumenda, sit
-                        nemo laboriosam animi cumque?
-                      </p>
-                    </div>
-                  </div>
-                </div> */}
-                <div className="bg-black w-full h-full text-white lg:py-20 flex items-center justify-center">
-                  <div className="text-center">
-                    <p className="font-body uppercase font-semibold text-4xl word-spacing sm:text-2xl">
-                      This
-                      <br />
-                      section
-                      <br />
-                      of the
-                      <br />
-                      newspaper
-                      <br />
-                      is being
-                      <br />
-                      worked
-                      <br />
-                      on by the
-                      <br />
-                      publisher.
-                    </p>{" "}
-                    <p className="uppercase word-spacing text-black sm:text-lg bg-white font-body mt-4 text-2xl">
-                      please stay tuned.
-                    </p>
-                  </div>
+                <div>
+                  {Projects.map((project) => {
+                    const { name, description, liveLink, githubLink } = project;
+                    return (
+                      <div
+                        className="flex flex-col items-start mb-4 border-b-[1px] border-black pb-4 last:border-0 last:mb-0"
+                        key={name}
+                      >
+                        <span className="flex justify-between w-full items-center">
+                          <a
+                            href={liveLink}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="font-subHeading md:text-xl underline tracking-tight text-2xl font-semibold uppercase"
+                          >
+                            {name}
+                          </a>
+                          <a
+                            href={githubLink}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="font-body font-semibold text-base text-black underline leading-7"
+                          >
+                            github
+                          </a>
+                        </span>
+                        <p className="font-body font-normal text-lg text-black leading-7 word-spacing mt-3 mb-1">
+                          {description}
+                        </p>
+                      </div>
+                    );
+                  })}
                 </div>
+                <div className="bg-black w-full h-full lg:hidden"></div>
               </div>
             </div>
             <div className="flex justify-between lg:flex-col">
