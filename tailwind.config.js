@@ -11,6 +11,10 @@ module.exports = {
       subHeading: ["Antonio", "Arial"],
       body: ["Lora"],
     },
+    colors: {
+      // clr: "#f5f666",
+      clr: "#3c2e0c",
+    },
     screens: {
       "2xl": { max: "1536px" },
       xl: { max: "1280px" },
