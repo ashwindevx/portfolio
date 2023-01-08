@@ -64,7 +64,7 @@ export default function Home({ blogs }) {
                   </p>
                 </div>
                 <div className="w-full border-4 border-black my-2 md:border-2"></div>
-                <h1 className="font-heading font-normal sm:mb-2 sm:text-[5.5em] xs:text-[5em] uppercase text-9xl xl:text-[7em] lg:text-[5.25em] md:text-[4.5em]">
+                <h1 className="font-heading font-normal sm:mb-2 sm:text-[4.75em] xs:text-[5em] uppercase text-9xl xl:text-[7em] lg:text-[5.25em] md:text-[4.5em]">
                   Frontend Developer
                 </h1>
                 <div className="flex justify-between sm:flex-col">
