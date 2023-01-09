@@ -6,10 +6,6 @@ import Laying from "../public/laying.png";
 import { fetchedData } from "./api/hello.js";
 import Projects from "/projects.json";
 
-export const config = {
-  unstable_runtimeJS: false,
-};
-
 export default function Home({ blogs }) {
   const posts = blogs.data.user.publication.posts.slice(0, 3);
   const today = new Date();
