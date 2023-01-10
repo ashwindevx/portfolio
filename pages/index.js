@@ -190,7 +190,7 @@ export default function Home({ blogs }) {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    gmail
+                    Gmail
                   </a>
                   <a
                     href="https://twitter.com/ashwincodes"
@@ -198,14 +198,14 @@ export default function Home({ blogs }) {
                     className="mx-2 sm:mx-0 my-1"
                     rel="noreferrer"
                   >
-                    twitter
+                    Twitter
                   </a>
                   <a
                     href="https://github.com/ashwindevx"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    github
+                    GitHub
                   </a>
                 </div>
                 <div className="bg-clr w-full h-full mt-6 lg:h-28 sm:h-24"></div>
