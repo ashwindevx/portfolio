@@ -31,11 +31,11 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://ashwin.codes/og-image.jpg"
+            content="https://ashwin-codes.vercel.app/og-image.jpg"
           />
           <meta
             name="twitter:image"
-            content="https://ashwin.codes/og-image.jpg"
+            content="https://ashwin-codes.vercel.app/og-image.jpg"
           />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
