@@ -75,9 +75,7 @@ export default function Home({ blogs }) {
                   <div className="lg:flex-[70%]">
                     <Image src={Profile} alt="" className="mb-6 w-full" />
                   </div>
-                  <div className="bg-clr w-full hidden lg:block mb-6 ml-4 lg:flex-[30%] sm:hidden">
-                    hello
-                  </div>
+                  <div className="bg-clr w-full hidden lg:block mb-6 ml-4 lg:flex-[30%] sm:hidden"></div>
                 </div>
                 <p className="font-body font-normal text-lg text-clr leading-7 word-spacing mb-3">
                   Ashwin is passionate about the power of the web and how it all
@@ -155,7 +153,7 @@ export default function Home({ blogs }) {
                           className="font-body block font-normal xl:truncate text-lg underline mb-2 text-clr leading-7"
                           rel="noreferrer"
                         >
-                          {post.title}
+                          • {post.title}
                         </a>
                       </>
                     );
