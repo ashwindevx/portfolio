@@ -31,15 +31,6 @@ export default function Home({ blogs }) {
     <Layout>
       <Head>
         <title>Ashwin - Frontend Developer</title>
-        <meta name="description" content="Ashwin Chauhan's portfolio website" />
-        <link rel="icon" href="/Frame 14.png" />
-        <meta property="og:url" content="https://www.ashwin.codes/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Ashwin - Frontend Developer" />
-        <meta
-          property="og:description"
-          content="Ashwin Chauhan's portfolio website"
-        />
       </Head>
       <div className="h-full py-8 xl:py-20 lg:py-4">
         <div className="max-w-7xl px-8 lg:px-4 mx-auto xs:px-2">

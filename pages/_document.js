@@ -10,6 +10,33 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta
+            name="description"
+            content="Ashwin Chauhan's portfolio website."
+          />
+          <link rel="icon" href="/Frame 14.png" />
+          <meta property="og:url" content="https://www.ashwin.codes/" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Ashwin - Frontend Developer" />
+          <meta
+            property="og:description"
+            content="Ashwin Chauhan's portfolio website"
+          />
+          <meta property="og:title" content="Ashwin Chuahan" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Ashwin Chuahan" />
+          <meta
+            name="twitter:description"
+            content="Ashwin Chauhan's portfolio website."
+          />
+          <meta
+            property="og:image"
+            content="https://ashwin.codes/og-image.jpg"
+          />
+          <meta
+            name="twitter:image"
+            content="https://ashwin.codes/og-image.jpg"
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
           <link
