@@ -10,38 +10,40 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          {/* <!-- Primary Meta Tags --> */}
+          <meta name="title" content="Ashwin - Frontend Developer" />
           <meta
             name="description"
             content="Ashwin Chauhan's portfolio website."
           />
           <link rel="icon" href="/Frame 14.png" />
-          <meta property="og:url" content="https://www.ashwin.codes/" />
+          {/* <!-- Open Graph / Facebook --> */}
           <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://www.ashwin.codes/" />
           <meta property="og:title" content="Ashwin - Frontend Developer" />
           <meta
             property="og:description"
-            content="Ashwin Chauhan's portfolio website"
-          />
-          <meta property="og:title" content="Ashwin Chuahan" />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Ashwin Chuahan" />
-          <meta
-            name="twitter:description"
             content="Ashwin Chauhan's portfolio website."
           />
           <meta
             property="og:image"
             content="https://ashwin-codes.vercel.app/og-image.png"
           />
+
+          {/* <!-- Twitter --> */}
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://www.ashwin.codes/" />
           <meta
-            name="twitter:image"
-            content="https://ashwin-codes.vercel.app/og-image.png"
+            property="twitter:title"
+            content="Ashwin - Frontend Developer"
           />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100;200;300;400;500;600;700&family=Lora:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
+          <meta
+            property="twitter:description"
+            content="Ashwin Chauhan's portfolio website."
+          />
+          <meta
+            property="twitter:image"
+            content="https://ashwin-codes.vercel.app/og-image.png"
           />
         </Head>
         <body>
