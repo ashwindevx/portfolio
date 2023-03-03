@@ -59,7 +59,7 @@ export default function Home({ blogs }) {
                     Ashwin Chauhan, 20
                   </h3>
                   <h3 className="font-heading xs:text-[1.8em] font-normal text-5xl xl:text-[2.75em] sm:text-[2em] lg:text-[2em] md:text-[1.75em] text-clr">
-                    30°42&apos;56.7&quot;N 76°39&apos;06.8&quot;E
+                    12°59'39.3"N 77°41'58.1"E
                   </h3>
                 </div>
               </div>
